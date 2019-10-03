@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for Turtle example
+ */
+
+grammar numbers;
+
+public <sequence> = <number> <number> <number>;
+
+
+<number> = oh | one | two | three | four | five | six | seven | eight | nine ;
