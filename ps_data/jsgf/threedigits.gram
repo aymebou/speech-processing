@@ -1,0 +1,13 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for Turtle example
+ */
+
+grammar numbers;
+
+public <sequence1> = <distance> ;
+public <sequence3> = <distance> <distance> <distance> ;
+public <sequence5> = <distance> <distance> <distance> <distance> <distance> ;
+
+<distance> = one | two | three | four | five | six | seven | eight | nine | ten ;
