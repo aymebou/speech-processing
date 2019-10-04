@@ -123,5 +123,5 @@ for k, v in dico.items():
             f.write(str(decoder.hyp().hypstr))
             f.write('\n')
             f.write(ref)
-    print ('Decoding with "numbers" grammar:', decoder.hyp().hypstr)
+    #print ('Decoding with "numbers" grammar:', decoder.hyp().hypstr)
     decoder.end_utt()
