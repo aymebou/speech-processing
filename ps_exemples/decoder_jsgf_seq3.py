@@ -52,7 +52,7 @@ for type in types:
 config = Decoder.default_config()
 config.set_string('-hmm',  '../ps_data/model/en-us')
 config.set_string('-lm',   '../ps_data/lm/turtle.lm.bin')
-config.set_string('-dict', '../ps_data/lex/turtle.dic')
+config.set_string('-dict', '../ps_data/lex/seq.dic')
 decoder = Decoder(config)
 
 # Decode with lm
