@@ -7,6 +7,7 @@ import os
 from pocketsphinx import *
 from sphinxbase import *
 
+
 path_to_directory = "../td_corpus_digits/SNR35dB"
 out_path = "results_td_corpus_digits"
 if not os.path.isdir(out_path):
@@ -84,6 +85,7 @@ decoder = Decoder(config)
 # decoder.set_search("3numbers")
 #
 # decoder.start_utt()
+
 for k, v in dico.items():
     if str(k)[-10] == '1':
         num = 1
@@ -116,12 +118,12 @@ for k, v in dico.items():
              break
 
     with open(out_file, 'w') as f:
-        with open(ref_file, 'r') as f2:
-            ref = f2.read()
         if decoder.hyp():
-            decoder.hyp().hypstr
-            f.write(str(decoder.hyp().hypstr))
-            f.write('\n')
-            f.write(ref)
+            hyp = decoder.hyp().hypstr
+            with open(ref_file, 'r') as f2:
+                ref = f2.read()
+                f.write(hyp)
+                f.write('\n')
+                f.write(ref)
     #print ('Decoding with "numbers" grammar:', decoder.hyp().hypstr)
     decoder.end_utt()
