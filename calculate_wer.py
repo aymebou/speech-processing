@@ -1,10 +1,7 @@
 from jiwer import wer:
 
 reslts_path = "results_td_corpus_digits"
-man_results = []
-woman_results= []
-girl_results = []
-boy_results = []
+
 
 
 
