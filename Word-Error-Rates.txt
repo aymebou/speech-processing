@@ -1,0 +1,26 @@
+--- MODEL COMPARAISON (all samples) ---
+ngram : 0.52125
+jsgf_seq_135 : 0.48625
+jsgf_seq_unknown : 0.694375
+
+
+--- SPEAKER GROUP COMPARAISON (all very low noise with all digits sequence) ---
+girl : 0.5225
+man : 0.2775
+woman : 0.295
+boy : 0.4775
+
+
+---  LENGTH COMPARAISON (all very low noise only for man) ---
+one_digit : 0.26
+three_digit : 0.29
+five_digit : 0.31
+
+
+--- NOISE COMPARAISON (only man speakers) ---
+man_high_q : 0.275
+man_standard_q : 0.345
+man_low_q : 0.5025
+man_very_low_q : 0.7975
+
+
